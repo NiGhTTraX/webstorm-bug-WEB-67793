@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { BarChart } from "react-native-gifted-charts";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -24,6 +25,7 @@ export function HelloWave() {
   return (
     <Animated.View style={animatedStyle}>
       <ThemedText style={styles.text}>👋</ThemedText>
+      <BarChart/>
     </Animated.View>
   );
 }
